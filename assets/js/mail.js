@@ -23,10 +23,11 @@ $('#sendEmailBtn').click(function () {
         }
     }).done(function (response) {
         console.log(response);
+        $('#name').val('');
+        $('#email').val('');
+        $('#message').val('');
+        $('#successMsg').removeClass('hidden');
     }).error(function (error) {
         console.log(error);
-    }).always(function (data) {
-            console.log(data.author);
-            console.log(data.message);
-        });
+    });
 });

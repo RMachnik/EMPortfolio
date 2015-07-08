@@ -3106,3 +3106,6 @@
 			}
 
 	}
+    .hidden {
+        visibility: hidden;
+    }
