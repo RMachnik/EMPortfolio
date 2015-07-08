@@ -1,24 +1,33 @@
 $('#sendEmailBtn').click(function () {
+    var mailFrom = $('#name').val();
+    var author = $('#email').val();
+    var message = $('#message').val();
+    var ewelinaEmail = 'ewelina.salagaj@gmail.com'
     $.ajax({
         type: 'POST',
         url: 'https://mandrillapp.com/api/1.0/messages/send.json',
         data: {
             'key': 'mZ41ty7LBB8rAaHvp9DAQg',
             'message': {
-                'from_email': 'zenek@EMAIL.HERE',
+                'from_email': mailFrom,
                 'to': [
                     {
-                        'email': 'rafik991@gmail.com',
-                        'name': 'RECIPIENT NAME (OPTIONAL)',
+                        'email': ewelinaEmail,
+                        'name': '',
                         'type': 'to'
                     }
                 ],
                 'autotext': 'true',
-                'subject': 'YOUR SUBJECT HERE!',
-                'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+                'subject': author,
+                'html': message
             }
         }
     }).done(function(response) {
-        console.log(response); // if you're into that sorta thing
-    });
+        console.log(response);
+    })
+        .always(function(data){
+            console.log(mailFrom);
+            console.log(author);
+            console.log(message);
+        });
 });
