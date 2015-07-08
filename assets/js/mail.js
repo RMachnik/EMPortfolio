@@ -2,17 +2,16 @@ $('#sendEmailBtn').click(function () {
     var mailFrom = $('#name').val();
     var author = $('#email').val();
     var message = $('#message').val();
-    var ewelinaEmail = 'ewelina.salagaj@gmail.com'
     $.ajax({
         type: 'POST',
         url: 'https://mandrillapp.com/api/1.0/messages/send.json',
         data: {
             'key': 'mZ41ty7LBB8rAaHvp9DAQg',
             'message': {
-                'from_email': mailFrom,
+                'from_email': author,
                 'to': [
                     {
-                        'email': ewelinaEmail,
+                        'email': 'ewelina.salagaj@gmail.com',
                         'name': '',
                         'type': 'to'
                     }
@@ -22,12 +21,12 @@ $('#sendEmailBtn').click(function () {
                 'html': message
             }
         }
-    }).done(function(response) {
+    }).done(function (response) {
         console.log(response);
-    })
-        .always(function(data){
-            console.log(mailFrom);
-            console.log(author);
-            console.log(message);
+    }).error(function (error) {
+        console.log(error);
+    }).always(function (data) {
+            console.log(data.author);
+            console.log(data.message);
         });
 });
