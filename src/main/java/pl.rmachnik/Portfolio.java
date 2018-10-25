@@ -1,43 +1,33 @@
 package pl.rmachnik;
 
+import com.google.gson.Gson;
 import io.javalin.Javalin;
 import io.javalin.rendering.JavalinRenderer;
 import io.javalin.rendering.template.JavalinVelocity;
 
-import java.io.File;
-import java.util.*;
-import java.util.stream.Collectors;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
+import java.util.Collections;
+import java.util.List;
 
 import static io.javalin.rendering.template.TemplateUtil.model;
-import static java.util.Arrays.asList;
 
 public class Portfolio {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws UnsupportedEncodingException {
         JavalinRenderer.register(JavalinVelocity.INSTANCE);
 
         Javalin app = Javalin.create();
         app.enableStaticFiles("web");
-        app.get("/", ctx -> ctx.result("Hello World"));
 
-        app.start(7000);
+        int port = Integer.valueOf(System.getProperty("port", "80"));
+        app.start(port);
 
-        File folder = new File(Thread.currentThread().getContextClassLoader().getResource("web/images").getPath());
-        List<File> sortedFiles = Arrays.asList(folder.listFiles());
-        sortedFiles.sort(File::compareTo);
-        List<Directory> directories = new ArrayList<>();
-        for (File file : sortedFiles) {
-            if (file.isDirectory()) {
-                List<Image> folderContent = asList(file.listFiles())
-                .stream()
-                .map(f -> new Image(f.getName().split("\\.")[0], file.getName() + "/" + f.getName()))
-                .collect(Collectors.toList());
-                folderContent.sort(Comparator.comparing(a -> a.name));
-                Directory directory = new Directory(file.getName(), folderContent);
-                directories.add(directory);
-            }
-        }
+        InputStream resourceAsStream = Portfolio.class.getResourceAsStream("/portfolio.json");
+        List<Directory> directories = new Gson().fromJson(new InputStreamReader(resourceAsStream, "UTF-8"), List.class);
         Collections.reverse(directories);
-        app.get("/template", ctx -> ctx.render("template.vtl", model("directories", directories)));
-    }
 
+        app.get("/", ctx -> ctx.render("/web/index.vtl", model("directories", directories)));
+
+    }
 }

@@ -1,0 +1,317 @@
+[
+  {
+    "name": "Wielopole 1",
+    "images": [
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/01_Wielopole 1/3.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/01_Wielopole 1/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/01_Wielopole 1/6.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Wielopole 2",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/02_Wielopole 2/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/02_Wielopole 2/2.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/02_Wielopole 2/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/02_Wielopole 2/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/02_Wielopole 2/6.jpg"
+      },
+      {
+        "name": "LAZ_RENDER1.jpg",
+        "path": "/portfolio/02_Wielopole 2/LAZ_RENDER1.jpg"
+      },
+      {
+        "name": "LAZ_RENDER2.jpg",
+        "path": "/portfolio/02_Wielopole 2/LAZ_RENDER2.jpg"
+      },
+      {
+        "name": "LAZ_RENDER3.jpg",
+        "path": "/portfolio/02_Wielopole 2/LAZ_RENDER3.jpg"
+      },
+      {
+        "name": "LAZ_RENDER4.jpg",
+        "path": "/portfolio/02_Wielopole 2/LAZ_RENDER4.jpg"
+      },
+      {
+        "name": "LAZ_RENDER5.jpg",
+        "path": "/portfolio/02_Wielopole 2/LAZ_RENDER5.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Piltza Parter",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/03_Piltza Parter/1.jpg"
+      },
+      {
+        "name": "10.jpg",
+        "path": "/portfolio/03_Piltza Parter/10.jpg"
+      },
+      {
+        "name": "11.jpg",
+        "path": "/portfolio/03_Piltza Parter/11.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/03_Piltza Parter/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/03_Piltza Parter/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/03_Piltza Parter/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/03_Piltza Parter/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/03_Piltza Parter/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/03_Piltza Parter/7.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/03_Piltza Parter/8.jpg"
+      },
+      {
+        "name": "9.jpg",
+        "path": "/portfolio/03_Piltza Parter/9.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Piltza 5p.",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/04_Piltrza 2/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/04_Piltrza 2/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/04_Piltrza 2/3.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/04_Piltrza 2/7.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Pokój nastolatka",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/05_Pokoj nastolatka/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/05_Pokoj nastolatka/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/05_Pokoj nastolatka/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/05_Pokoj nastolatka/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/05_Pokoj nastolatka/5.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Augustiańska 1",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/06_Augustianska/1.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/06_Augustianska/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/06_Augustianska/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/06_Augustianska/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/06_Augustianska/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/06_Augustianska/7.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/06_Augustianska/8.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Dom Gdów",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/07_Dom Gdow/1.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/07_Dom Gdow/5.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/07_Dom Gdow/7.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Skawina",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/08_Skawina/1.jpg"
+      },
+      {
+        "name": "10.jpg",
+        "path": "/portfolio/08_Skawina/10.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/08_Skawina/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/08_Skawina/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/08_Skawina/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/08_Skawina/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/08_Skawina/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/08_Skawina/7.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/08_Skawina/8.jpg"
+      },
+      {
+        "name": "9.jpg",
+        "path": "/portfolio/08_Skawina/9.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Pokój nastolatka",
+    "images": [
+      {
+        "name": "A.jpg",
+        "path": "/portfolio/09_Pokoj Macka/A.jpg"
+      },
+      {
+        "name": "B.jpg",
+        "path": "/portfolio/09_Pokoj Macka/B.jpg"
+      },
+      {
+        "name": "C.jpg",
+        "path": "/portfolio/09_Pokoj Macka/C.jpg"
+      },
+      {
+        "name": "D.jpg",
+        "path": "/portfolio/09_Pokoj Macka/D.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Malinowe Wzgórze",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/10_Malinowe Wzgorze/7.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Augustiańska 2",
+    "images": [
+      {
+        "name": "1_a.jpg",
+        "path": "/portfolio/11_Augustianska/1_a.jpg"
+      }
+    ]
+  }
+]
