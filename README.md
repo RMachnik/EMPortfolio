@@ -1,1 +1,1 @@
-EPortfolio is a new portfolio of Ewelina Salagaj.
+EPortfolio is a new portfolio of Ewelina Machnik.
