@@ -19,7 +19,7 @@
 
 <!-- Header -->
 <header id="header">
-  <a href="#" class="image avatar"><img src="images/avatar.jpg" alt=""/></a>
+  <a href="#" class="image avatar"><img src="images/avatar_min.jpg" alt=""/></a>
 
   <h1><strong>Projekty</strong>
     <div>
@@ -50,7 +50,7 @@
           <article class="6u 12u$(xsmall) work-item">
             #foreach( $image in $directory.images )
 
-              <a href="${image.path}" class="image fit thumb"><img src="thumb?image=${image.path}" alt=""/></a>
+              <a href="pics?image=${image.path}" class="image fit thumb"><img src="thumb?image=${image.path}" alt=""/></a>
             #end
           </article>
         </div>

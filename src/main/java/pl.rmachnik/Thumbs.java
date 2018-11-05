@@ -20,6 +20,7 @@ public class Thumbs {
     static Logger LOG = LoggerFactory.getLogger(Thumbs.class);
 
     final Map<String, ByteArrayOutputStream> thumbs = new ConcurrentHashMap<>();
+    final Map<String, ByteArrayOutputStream> pics = new ConcurrentHashMap<>();
 
     public Thumbs(Collection<Directory> portfolioDirs) throws IOException {
 
@@ -28,14 +29,20 @@ public class Thumbs {
         .flatMap(Collection::stream)
         .collect(toMap(Image::getPath, img -> Thumbs.class.getResourceAsStream("/web" + img.path)));
 
-        populateCache(imageToStream);
+        populateChache(imageToStream);
         LOG.info("Thumbs are ready.");
     }
 
-    private void populateCache(Map<String, InputStream> imageToStream) throws IOException {
+    private void populateChache(Map<String, InputStream> imageToStream) throws IOException {
         for (Map.Entry<String, InputStream> entry : imageToStream.entrySet()) {
             BufferedImage loadedImage = ImageIO.read(entry.getValue());
-            thumbs.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 600, 600));
+            if (loadedImage.getHeight() > loadedImage.getWidth()) {
+                thumbs.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 400, 600));
+                pics.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 768, 1366));
+            } else {
+                thumbs.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 600, 400));
+                pics.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 1366, 768));
+            }
         }
     }
 }
