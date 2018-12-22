@@ -329,5 +329,105 @@
         "path": "/portfolio/11_Augustianska/5.jpg"
       }
     ]
+  },
+  {
+    "name": "Pianissimo",
+    "images": [
+      {
+        "name": "1a.jpg",
+        "path": "/portfolio/pianissimo/1a.jpg"
+      },
+      {
+        "name": "2a.jpg",
+        "path": "/portfolio/pianissimo/2a.jpg"
+      },
+      {
+        "name": "3a.jpg",
+        "path": "/portfolio/pianissimo/3a.jpg"
+      },
+      {
+        "name": "4a.jpg",
+        "path": "/portfolio/pianissimo/4a.jpg"
+      },
+      {
+        "name": "6a.jpg",
+        "path": "/portfolio/pianissimo/6a.jpg"
+      },
+      {
+        "name": "7a.jpg",
+        "path": "/portfolio/pianissimo/7a.jpg"
+      },
+      {
+        "name": "8a.jpg",
+        "path": "/portfolio/pianissimo/8a.jpg"
+      },
+      {
+        "name": "9a.jpg",
+        "path": "/portfolio/pianissimo/9a.jpg"
+      },
+      {
+        "name": "10a.jpg",
+        "path": "/portfolio/pianissimo/10a.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/pianissimo1/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/pianissimo1/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/pianissimo1/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/pianissimo1/7.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/pianissimo1/8.jpg"
+      }
+    ]
+  },
+  {
+    "name": "",
+    "images": [
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/okolna/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/okolna/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/okolna/5.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Okólna",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/okolna/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/okolna/2.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Wrocławska",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/wroclawska/1.jpg"
+      }
+    ]
   }
 ]
