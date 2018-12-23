@@ -29,11 +29,11 @@ public class Thumbs {
         .flatMap(Collection::stream)
         .collect(toMap(Image::getPath, img -> Thumbs.class.getResourceAsStream("/web" + img.path)));
 
-        populateChache(imageToStream);
+        populateCache(imageToStream);
         LOG.info("Thumbs are ready.");
     }
 
-    private void populateChache(Map<String, InputStream> imageToStream) throws IOException {
+    private void populateCache(Map<String, InputStream> imageToStream) throws IOException {
         for (Map.Entry<String, InputStream> entry : imageToStream.entrySet()) {
             BufferedImage loadedImage = ImageIO.read(entry.getValue());
             if (loadedImage.getHeight() > loadedImage.getWidth()) {
