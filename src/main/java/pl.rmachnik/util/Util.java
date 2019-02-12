@@ -1,6 +1,8 @@
-package pl.rmachnik;
+package pl.rmachnik.util;
 
 import com.google.gson.Gson;
+import pl.rmachnik.domain.Directory;
+import pl.rmachnik.domain.Image;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -27,7 +29,6 @@ public class Util {
 
     private List<String> getResourceFiles(String path) throws IOException {
         List<String> filenames = new ArrayList<>();
-
         try (
         InputStream in = getResourceAsStream(path);
         BufferedReader br = new BufferedReader(new InputStreamReader(in))) {
@@ -37,13 +38,11 @@ public class Util {
                 filenames.add(resource);
             }
         }
-
         return filenames;
     }
 
     private InputStream getResourceAsStream(String resource) {
         final InputStream in = getContextClassLoader().getResourceAsStream(resource);
-
         return in == null ? getClass().getResourceAsStream(resource) : in;
     }
 

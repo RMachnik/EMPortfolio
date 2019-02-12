@@ -1,7 +1,8 @@
-package pl.rmachnik;
+package pl.rmachnik.domain;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import pl.rmachnik.util.ImageResizer;
 
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
@@ -17,10 +18,10 @@ import static java.util.stream.Collectors.toMap;
 
 public class Thumbs {
 
-    static Logger LOG = LoggerFactory.getLogger(Thumbs.class);
+    private static Logger LOG = LoggerFactory.getLogger(Thumbs.class);
 
-    final Map<String, ByteArrayOutputStream> thumbs = new ConcurrentHashMap<>();
-    final Map<String, ByteArrayOutputStream> pics = new ConcurrentHashMap<>();
+    private final Map<String, ByteArrayOutputStream> thumbs = new ConcurrentHashMap<>();
+    private final Map<String, ByteArrayOutputStream> pictures = new ConcurrentHashMap<>();
 
     public Thumbs(Collection<Directory> portfolioDirs) throws IOException {
 
@@ -38,11 +39,19 @@ public class Thumbs {
             BufferedImage loadedImage = ImageIO.read(entry.getValue());
             if (loadedImage.getHeight() > loadedImage.getWidth()) {
                 thumbs.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 400, 600));
-                pics.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 768, 1366));
+                pictures.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 768, 1366));
             } else {
                 thumbs.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 600, 400));
-                pics.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 1366, 768));
+                pictures.put(entry.getKey(), ImageResizer.scaleImage(loadedImage, TYPE_INT_RGB, 1366, 768));
             }
         }
+    }
+
+    public ByteArrayOutputStream getThumb(String thumbKey) {
+        return thumbs.get(thumbKey);
+    }
+
+    public ByteArrayOutputStream getImage(String image) {
+        return pictures.get(image);
     }
 }

@@ -1,4 +1,4 @@
-package pl.rmachnik;
+package pl.rmachnik.domain;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -12,10 +12,6 @@ public class Directory implements Comparable<Directory> {
     public Directory(String name, List<Image> images) {
         this.name = name.split("_")[1];
         this.images = images;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public List<Image> getImages() {

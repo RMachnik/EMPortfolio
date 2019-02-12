@@ -1,4 +1,4 @@
-package pl.rmachnik;
+package pl.rmachnik.util;
 
 import javax.imageio.ImageIO;
 import java.awt.*;

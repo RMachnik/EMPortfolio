@@ -1,4 +1,4 @@
-package pl.rmachnik;
+package pl.rmachnik.domain;
 
 public class Image {
     public String name;
@@ -7,10 +7,6 @@ public class Image {
     public Image(String name, String path) {
         this.name = name;
         this.path = path;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public String getPath() {
