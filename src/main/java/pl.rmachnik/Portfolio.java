@@ -32,10 +32,10 @@ public class Portfolio {
         InputStream resourceAsStream = Portfolio.class.getResourceAsStream("/portfolio.json");
         List<Directory> directories = new Gson().fromJson(new InputStreamReader(resourceAsStream, UTF_8), new TypeToken<List<Directory>>() {}.getType());
         Collections.reverse(directories);
+
+        LOG.info("Loading cache.");
         Thumbs thumbsCache = new Thumbs(directories);
-
-
-        LOG.info("App is ready.");
+        LOG.info("Cache ready, app is ready.");
 
         app.get("/", ctx -> ctx.render("/web/index.vtl", model("directories", directories)));
         app.get("/thumb/", ctx -> {

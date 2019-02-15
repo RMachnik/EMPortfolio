@@ -12,4 +12,8 @@ public class Image {
     public String getPath() {
         return path;
     }
+
+    public String getName() {
+        return name;
+    }
 }

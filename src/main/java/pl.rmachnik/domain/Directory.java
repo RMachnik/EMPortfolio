@@ -14,6 +14,10 @@ public class Directory implements Comparable<Directory> {
         this.images = images;
     }
 
+    public String getName() {
+        return name;
+    }
+
     public List<Image> getImages() {
         return images;
     }

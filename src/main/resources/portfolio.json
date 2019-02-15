@@ -425,8 +425,43 @@
     "name": "Wrocławska",
     "images": [
       {
-        "name": "1.jpg",
-        "path": "/portfolio/wroclawska/1.jpg"
+        "name": "2.jpg",
+        "path": "/portfolio/wroclawska/2.jpg"
+      },
+      {
+        "name": "22.jpg",
+        "path": "/portfolio/wroclawska/28.jpg"
+      },
+      {
+        "name": "14.jpg",
+        "path": "/portfolio/wroclawska/14.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/wroclawska/8.jpg"
+      },
+      {
+        "name": "10.jpg",
+        "path": "/portfolio/wroclawska/10.jpg"
+      },
+      {
+        "name": "17.jpg",
+        "path": "/portfolio/wroclawska/17.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/wroclawska/6.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/wroclawska/5.jpg"
+      }, {
+        "name": "19.jpg",
+        "path": "/portfolio/wroclawska/19.jpg"
+      },
+      {
+        "name": "20.jpg",
+        "path": "/portfolio/wroclawska/20.jpg"
       }
     ]
   }
