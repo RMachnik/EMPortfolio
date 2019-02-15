@@ -8,7 +8,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-
+<distributionManagement>
+  <repository>
+    <id>maven-repository</id>
+    <url>file:~/Dev/repos</url>
+  </repository>
+</distributionManagement>
   <dependencies>
     <dependency>
       <groupId>io.javalin</groupId>
