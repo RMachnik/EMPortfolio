@@ -8,12 +8,12 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
-<distributionManagement>
-  <repository>
-    <id>maven-repository</id>
-    <url>file:~/Dev/repos</url>
-  </repository>
-</distributionManagement>
+  <distributionManagement>
+    <repository>
+      <id>maven-repository</id>
+      <url>file:~/Dev/repos</url>
+    </repository>
+  </distributionManagement>
   <dependencies>
     <dependency>
       <groupId>io.javalin</groupId>
@@ -83,16 +83,16 @@
           </excludes>
         </configuration>
       </plugin>
-        <plugin>
-          <groupId>com.github.danielflower.mavenplugins</groupId>
-          <artifactId>multi-module-maven-release-plugin</artifactId>
-          <version>3.0.3</version>
-          <configuration>
-            <releaseGoals>
-              <releaseGoal>deploy</releaseGoal>
-            </releaseGoals>
-          </configuration>
-        </plugin>
+      <plugin>
+        <groupId>com.github.danielflower.mavenplugins</groupId>
+        <artifactId>multi-module-maven-release-plugin</artifactId>
+        <version>3.0.3</version>
+        <configuration>
+          <releaseGoals>
+            <releaseGoal>deploy</releaseGoal>
+          </releaseGoals>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-assembly-plugin</artifactId>
