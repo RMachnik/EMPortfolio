@@ -11,4 +11,4 @@ gen
 /target
 .DS_Store
 *.log
-/Dev/repos
+~/Dev/repos
