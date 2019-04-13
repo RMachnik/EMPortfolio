@@ -464,5 +464,61 @@
         "path": "/portfolio/wroclawska/20.jpg"
       }
     ]
+  },
+  {
+    "name": "Bochenka",
+    "images": [
+      {
+        "name": "1.jpg",
+        "path": "/portfolio/12_Bochenka/1.jpg"
+      },
+      {
+        "name": "2.jpg",
+        "path": "/portfolio/12_Bochenka/2.jpg"
+      },
+      {
+        "name": "3.jpg",
+        "path": "/portfolio/12_Bochenka/3.jpg"
+      },
+      {
+        "name": "4.jpg",
+        "path": "/portfolio/12_Bochenka/4.jpg"
+      },
+      {
+        "name": "5.jpg",
+        "path": "/portfolio/12_Bochenka/5.jpg"
+      },
+      {
+        "name": "6.jpg",
+        "path": "/portfolio/12_Bochenka/6.jpg"
+      },
+      {
+        "name": "7.jpg",
+        "path": "/portfolio/12_Bochenka/7.jpg"
+      },
+      {
+        "name": "8.jpg",
+        "path": "/portfolio/12_Bochenka/8.jpg"
+      }, {
+        "name": "9.jpg",
+        "path": "/portfolio/12_Bochenka/9.jpg"
+      },
+      {
+        "name": "10.jpg",
+        "path": "/portfolio/12_Bochenka/10.jpg"
+      },
+      {
+        "name": "11.jpg",
+        "path": "/portfolio/12_Bochenka/11.jpg"
+      },
+      {
+        "name": "12.jpg",
+        "path": "/portfolio/12_Bochenka/12.jpg"
+      },
+      {
+        "name": "13.jpg",
+        "path": "/portfolio/12_Bochenka/13.jpg"
+      }
+    ]
   }
 ]
