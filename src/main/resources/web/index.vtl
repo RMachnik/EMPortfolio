@@ -20,14 +20,18 @@
 <!-- Header -->
 <header id="header">
   <a href="#" class="image avatar"><img src="images/avatar1_min.png" alt=""/></a>
-
-  <h1><strong>Projekty</strong>
+  <h3>
+    <div><a href="#contact">Kontakt</a></div>
+    <strong>Projekty</strong>
+  </h3>
+  <h1>
     <div>
       #foreach( $directory in $directories )
         <div><a href="#${directory.name}">${directory.name}</a></div>
       #end
-      <div><a href="#contact">Kontakt</a></div>
+
     </div>
+  </h1>
 </header>
 
 <!-- Main -->
@@ -50,7 +54,8 @@
           <article class="6u 12u$(xsmall) work-item">
             #foreach( $image in $directory.images )
 
-              <a href="pics?image=${image.path}" class="image fit thumb"><img src="thumb?image=${image.path}" alt=""/></a>
+              <a href="pics?image=${image.path}" class="image fit thumb"><img src="thumb?image=${image.path}"
+                                                                              alt=""/></a>
             #end
           </article>
         </div>
