@@ -49,6 +49,5 @@ public class Portfolio {
             ctx.contentType("image/jpeg");
             ctx.result(new ByteArrayInputStream(image.toByteArray()));
         });
-
     }
 }
