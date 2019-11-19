@@ -3,8 +3,7 @@ package pl.rmachnik;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import io.javalin.Javalin;
-import io.javalin.rendering.JavalinRenderer;
-import io.javalin.rendering.template.JavalinVelocity;
+import io.javalin.plugin.rendering.JavalinRenderer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import pl.rmachnik.domain.Directory;
@@ -14,19 +13,20 @@ import java.io.*;
 import java.util.Collections;
 import java.util.List;
 
-import static io.javalin.rendering.template.TemplateUtil.model;
+import static io.javalin.plugin.rendering.template.JavalinVelocity.INSTANCE;
+import static io.javalin.plugin.rendering.template.TemplateUtil.model;
 import static kotlin.text.Charsets.UTF_8;
 
 public class Portfolio {
-    static Logger LOG = LoggerFactory.getLogger(Portfolio.class);
+    private static Logger LOG = LoggerFactory.getLogger(Portfolio.class);
 
 
     public static void main(String[] args) throws IOException {
-        JavalinRenderer.register(JavalinVelocity.INSTANCE);
-        int port = Integer.valueOf(System.getProperty("port", "80"));
+        JavalinRenderer.register(INSTANCE);
+        int port = Integer.parseInt(System.getProperty("port", "0"));
 
         Javalin app = Javalin.create();
-        app.enableStaticFiles("web");
+        app.config.addStaticFiles("web");
         app.start(port);
 
         InputStream resourceAsStream = Portfolio.class.getResourceAsStream("/portfolio.json");
