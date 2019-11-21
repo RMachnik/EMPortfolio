@@ -95,9 +95,6 @@
                   <mainClass>pl.rmachnik.Portfolio</mainClass>
                 </manifest>
               </archive>
-              <descriptorRefs>
-                <descriptorRef>jar-with-dependencies</descriptorRef>
-              </descriptorRefs>
             </configuration>
           </execution>
         </executions>
