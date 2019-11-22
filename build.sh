@@ -2,6 +2,7 @@
 
 set -e
 echo "build parameter: $1 $2"
-echo $JAVA_12
+JAVA_HOME="~/.sdkman/candidates/java/12.0.2-open"
+echo $JAVA_HOME
 mvn --version
 mvn releaser:release
