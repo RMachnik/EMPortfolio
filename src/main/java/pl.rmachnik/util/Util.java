@@ -20,7 +20,7 @@ public class Util {
             Directory dir = new Directory(directory, images.stream().map(img -> new Image(img, "/portfolio/" + directory + "/" + img)).collect(toList()));
             dirs.add(dir);
         }
-        Gson gson =new Gson();
+        Gson gson = new Gson();
         String dirsJson = gson.toJson(dirs);
         FileWriter fileWriter = new FileWriter("portfolio.json");
         fileWriter.write(dirsJson);

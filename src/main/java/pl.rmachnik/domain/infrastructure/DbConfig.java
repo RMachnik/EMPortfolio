@@ -58,6 +58,5 @@ public class DbConfig {
 
     public static void main(String[] args) {
         new DbConfig("portfolio.db");
-
     }
 }
