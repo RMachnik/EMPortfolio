@@ -27,6 +27,7 @@ public class Portfolio {
 
         Javalin app = Javalin.create();
         app.config.addStaticFiles("web");
+        app.config.autogenerateEtags = true;
         app.start(port);
 
         InputStream resourceAsStream = Portfolio.class.getResourceAsStream("/portfolio.json");
